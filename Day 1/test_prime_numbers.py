@@ -1,9 +1,12 @@
 #Testing Prime Number Generator
+'''These are tests to be passed for a program to generate prime numbers'''
 import unittest
 from prime_numbers import gen_primenos
 
 
 class PrimeGeneratorTest(unittest.TestCase):
+    def test_invalid_type_string_list(self):
+        self.assertEqual(gen_primenos([]), "Integers only allowed")
     
     def test_only_positive(self):
         self.assertEqual(gen_primenos(-1), "Prime numbers cannot be less than two.")
