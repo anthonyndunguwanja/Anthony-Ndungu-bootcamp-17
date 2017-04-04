@@ -2,6 +2,7 @@
 #Generating prime numbers 
 
 def gen_primenos(num):
+    '''This is a function to output prime numbers using asymptotic analysis from 0 to n'''
 
     my_nums = []
     if num in (0, 1):
