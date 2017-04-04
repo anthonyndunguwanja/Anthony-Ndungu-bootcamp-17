@@ -6,9 +6,11 @@ def gen_primenos(num):
 
     my_nums = []
     if num in (0, 1):
+         '''Testing zero or one is not a prime number'''
         return "Zero or One cannot be prime numbers."
 
     if num < 2:
+        '''Testing that a number less than two is not a prime mumber'''
         return "Prime numbers cannot be less than two."
 
     if type(num) != int:
