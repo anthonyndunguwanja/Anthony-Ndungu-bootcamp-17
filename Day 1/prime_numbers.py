@@ -24,3 +24,5 @@ def gen_primenos(num):
             else:
                 my_nums.append(x)
     return my_nums
+num = input("Enter a number to test whether it is a prime number:")
+print(gen_primenos(num))
