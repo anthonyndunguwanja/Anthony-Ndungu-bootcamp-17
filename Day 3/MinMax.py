@@ -7,4 +7,3 @@ def find_max_min(a):
         return [min(a),max(a)]
   else:
     return None
-print(find_max_min([4, 4, 4, 4]))
