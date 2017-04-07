@@ -5,9 +5,6 @@ from prime_numbers import prime_number_generator
 
 
 class PrimeGeneratorTest(unittest.TestCase):
-    def test_invalid_type_string_list(self):
-        self.assertEqual(prime_number_generator([]), "Integers only allowed")
-    
     def test_only_positive(self):
         self.assertEqual(prime_number_generator(-1), "Prime numbers cannot be less than two.")
 
